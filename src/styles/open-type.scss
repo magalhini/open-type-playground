@@ -1,0 +1,132 @@
+/**
+ * Features
+ */
+
+.ligatures {
+  -webkit-font-variant-ligatures: common-ligatures;
+          font-variant-ligatures: common-ligatures;
+  -webkit-font-feature-settings: "liga", "liga", "clig";
+          font-feature-settings: "liga", "liga", "clig";
+}
+
+.ligatures-off {
+  -webkit-font-feature-settings: "liga" 0, "liga" 0, "clig" 0;
+          font-feature-settings: "liga" 0, "liga" 0, "clig" 0;
+}
+
+.c2sc {
+   font-variant-caps: all-small-caps;
+  -moz-font-feature-settings: "c2sc", "smcp";
+  -webkit-font-feature-settings: "c2sc", "smcp";
+  font-feature-settings: "c2sc", "smcp";
+}
+
+/** Small Caps **/
+.smcp {
+  font-variant-caps: small-caps;
+  -moz-font-feature-settings: "smcp";
+  -webkit-font-feature-settings: "smcp";
+  font-feature-settings: "smcp";
+}
+
+.disc {
+  -ms-font-feature-settings: "dlig";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+          font-variant-ligatures: discretionary-ligatures;
+  -moz-font-feature-settings: "dlig";
+  -webkit-font-feature-settings: "dlig";
+  font-feature-settings: "dlig", "dlig";
+}
+
+.calt {
+   font-variant-ligatures: no-contextual;
+   -moz-font-feature-settings: "calt" 0;
+   -webkit-font-feature-settings: "calt" 0;
+   font-feature-settings: "calt" 0;
+}
+
+.oldnum {
+ -webkit-font-feature-settings: "lnum" 0, "onum", "onum";
+         font-feature-settings: "lnum" 0, "onum", "onum";
+}
+
+.salt {
+  -moz-font-feature-settings: "salt";
+  -webkit-font-feature-settings: "salt";
+  font-feature-settings: "salt";
+}
+
+/** Lining Numerals **/
+.lnum {
+  font-variant-numeric: lining-nums;
+  -webkit-font-feature-settings: "lnum", "onum" 0, "lnum";
+  font-feature-settings: "lnum", "onum" 0, "lnum";
+}
+
+/** Fractions **/
+.frac {
+  -ms-font-feature-settings: "frac", "afrc" 0;
+  font-variant-numeric: diagonal-fractions;
+  -webkit-font-feature-settings: "frac", "afrc" 0, "frac";
+  font-feature-settings: "frac", "afrc" 0, "frac";
+}
+
+/** Ordinals **/
+.ordn {
+  -ms-font-feature-settings: "ordn";
+  font-variant-numeric: ordinal;
+  -webkit-font-feature-settings: "ordn", "ordn";
+  font-feature-settings: "ordn", "ordn";
+}
+
+/** Swashes **/
+.swash {
+  -webkit-font-feature-settings: "swsh";
+  font-feature-settings: "swsh"
+}
+
+/** Stylistic Sets **/
+.ss01 {
+  -webkit-font-feature-settings: "ss01";
+  font-feature-settings: "ss01"
+}
+
+/** Historical Forms **/
+
+.hist {
+  -ms-font-feature-settings: "hist";
+  font-variant-alternates: historical-forms;
+  -webkit-font-feature-settings: "hist";
+  font-feature-settings: "hist";
+}
+
+/** Proportional Numerals **/
+.pnum {
+  -webkit-font-feature-settings: "pnum", "tnum" 0, "pnum";
+    font-feature-settings: "pnum", "tnum" 0, "pnum";
+}
+
+/** Sups **/
+.sups {
+  font-variant-position: super;
+  -webkit-font-feature-settings: "sups", "sups";
+    font-feature-settings: "sups", "sups";
+}
+
+/** Titling Caps **/
+.titl {
+  -webkit-font-feature-settings: "titl", "titl";
+          font-feature-settings: "titl", "titl";
+}
+
+/** Slashed Zero **/
+.zero {   -webkit-font-feature-settings: "zero";
+  font-feature-settings: "zero";
+}
+
+.sinf {
+    font-variant-position: normal;
+    -webkit-font-feature-settings: "sinf", "subs" off, "sups" off;
+    font-feature-settings: "sinf", "subs" off, "sups" off;
+    vertical-align: baseline;
+  }

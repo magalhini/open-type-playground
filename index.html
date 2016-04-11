@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>OpenType Features demo</title>
+    <link rel="stylesheet" href="public/styles.css">
+    <script src="https://use.typekit.net/jee4foi.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+    </head>
+    <body>
+      <h1 class="calt">OpenType
+          <span>Features</span>
+      </h1>
+      <div class="main-description ligatures">
+          <span class="smcp">a playground with samples</span> for the most common OpenType features available out in Web Typography.
+          You can read the <a href="http://">original blog post</a> about how to use them and to understand
+          the state of the art, or simply have fun toggling each feature individually to see its
+          effect in action.
+          <span class="p-decorator">&#10086;</span>
+      </div>
+      <div data-type="ligatures" class="feature ligatures-off">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_ligatures">
+          <label for="cb_ligatures">Ligatures</label>
+        </div>
+        <div class="feature__sample ">affordable filial</div>
+      </div>
+
+      <div data-type="oldnum" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_oldnum">
+          <label for="cb_oldnum">Oldstyle numerals</label>
+        </div>
+        <div class="feature__sample">In 1987...</div>
+      </div>
+
+      <div data-type="calt" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_calt">
+          <label for="cb_calt">Contextual alts</label>
+        </div>
+        <div class="feature__sample calt font--caflish">blooming alternatives</div>
+      </div>
+
+      <div data-type="salt" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_salt">
+          <label for="cb_salt">Stylistic alternates</label>
+        </div>
+        <div class="feature__sample font--warnock salt">Bow a salty hype</div>
+      </div>
+
+      <div data-type="lnum" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_lnum">
+          <label for="cb_lnum">Lining numerals</label>
+        </div>
+        <div class="feature__sample oldnum">1270 dollars</div>
+      </div>
+
+      <div data-type="frac" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_frac">
+          <label for="cb_frac">Fractions</label>
+        </div>
+        <div class="feature__sample font--caflish">1/2 cup rice . 3/4 honey</div>
+      </div>
+
+      <div data-type="ordn" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_ordn">
+          <label for="cb_ordn">Ordinals</label>
+        </div>
+        <div class="feature__sample">1st 2nd 3rd 4th</div>
+      </div>
+
+        <div data-type="ss01" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_ss01">
+          <label for="cb_ss01">Stylistic Sets</label>
+        </div>
+        <div class="feature__sample font--warnock">Getaway driver</div>
+      </div>
+
+     <div data-type="swash" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_swash">
+          <label for="cb_swash">Swashes</label>
+        </div>
+        <div class="feature__sample feature__sample--swash font--bickham">Others Failed</div>
+      </div>
+
+        <div data-type="smcp" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_smcp">
+          <label for="cb_smcp">Small Capitals</label>
+        </div>
+        <div class="feature__sample">shout elegantly</div>
+      </div>
+
+       <div data-type="c2sc" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_c2sc">
+          <label for="cb_c2sc">Capitals to Small Capitals</label>
+        </div>
+        <div class="feature__sample">less shouting</div>
+      </div>
+
+       <div data-type="disc" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_disc">
+          <label for="cb_disc">Discretionary Ligatures</label>
+        </div>
+        <div class="feature__sample">Contract straight</div>
+      </div>
+
+       <div data-type="hist" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_hist">
+          <label for="cb_hist">Historical Forms</label>
+        </div>
+        <div class="feature__sample">Historical Forms</div>
+      </div>
+
+    <div data-type="pnum" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_pnum">
+          <label for="cb_pnum">Proportional numerals</label>
+        </div>
+        <div class="feature__sample">250 430 560</div>
+      </div>
+
+    <div data-type="sups" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_sups">
+          <label for="cb_sups">Sups numerals</label>
+        </div>
+        <div class="feature__sample">C0 H2</div>
+      </div>
+
+    <div data-type="sinf" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_sinf">
+          <label for="cb_sinf">Scientific inferior</label>
+        </div>
+        <div class="feature__sample">F3D23</div>
+      </div>
+
+    <div data-type="zero" class="feature">
+        <div class="feature__toggle">
+          <input type="checkbox" id="cb_zero">
+          <label for="cb_zero">Slashed zero</label>
+        </div>
+        <div class="feature__sample font--caflish">Non 0</div>
+    </div>
+
+    <footer class="footer">
+        <p class="smcp">more:</p>
+        <ul>
+            <li><a href="https://github.com/magalhini/open-type-playground">Fork this on Github</a></li>
+        </ul>
+        <p class="footer__author">Written by Ricardo Magalhães <a href="http://www.twitter.com/magalhini">@magalhini</a></p>
+    </footer>
+      <script src="public/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,184 @@
+@import 'open-type';
+
+$secondary-color: #BBAC2C;
+
+* {
+  box-sizing: border-box;
+}
+
+a, a:visited {
+    color: rgb(132, 192, 205);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+  font-family: 'adobe-caslon-pro', sans-serif;
+  font-size: 2em;
+  text-align: center;
+  color: #222;
+  background: #fefefe;
+  line-height: 1.5;
+  width: 80%;
+  max-width: 30em;
+  margin: 0 auto;
+
+  @media screen and (min-width: 60em) {
+    max-width: 20em;
+  }
+}
+
+h1 {
+  font-style: italic;
+  font-size: 2em;
+  font-weight: 200;
+  margin-bottom: 0;
+  opacity: 0;
+  transition: opacity .8s ease-in-out,
+              letter-spacing .9s ease-out;
+  transform: translateX(-.1em);
+
+  @media screen and (min-width: 60em) {
+    font-size: 3em;
+    margin-bottom: 0;
+  }
+}
+
+.main-description {
+    font-size: 1.5rem;
+}
+
+.p-decorator {
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-top: .5em;
+}
+
+.ready h1 {
+  opacity: 1;
+  letter-spacing: -1px;
+  transform: translateX(0);
+}
+
+h1 span {
+  font-family: "bickham-script-pro-3";
+  display: block;
+  font-size: 1.5em;
+  margin-top: -.7em;
+  margin-left: 1.1em;
+}
+
+.font--bickham {
+  font-family: "bickham-script-pro-3", serif;
+}
+
+.font--caflish {
+  font-family: "caflisch-script-pro", serif;
+}
+
+.font--warnock {
+  font-family: "warnock-pro", serif;
+}
+
+label {
+  font-size: .8rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-family: sans-serif;
+  margin-left: 1rem;
+  color: #484848;
+
+  &:hover {cursor: pointer;}
+}
+
+
+/** Initial animation **/
+@for $i from 0 through 19 {
+  .ready .feature:nth-child(#{$i}) {
+    opacity: 1;
+    transform: translateY(1rem);
+    transition-delay: (#{$i*0.2}) + s;
+  }
+}
+
+.feature {
+  padding: .5em 0 .5em 0;
+  border-bottom: 1px dashed #333;
+  transition: all ease-in-out .2s;
+  opacity: 0;
+
+  input[type="checkbox"] {
+    transform: scale(1);
+  }
+
+  &:hover {
+    label { color: rgb(132, 192, 205); }
+  }
+
+  @media screen and (min-width: 500px) {
+    display: flex;
+  }
+}
+
+
+.feature__toggle {
+  align-items: center;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.feature__sample {
+  width: 100%;
+  text-align: left;
+  margin-top: 1rem;
+
+  @media screen and (min-width: 500px) {
+    flex: 2;
+    margin-top: 0;
+    display: flex;
+    justify-content: flex-end;
+
+    &--swash {
+      font-size: 1.6em;
+    }
+  }
+}
+
+abbr {
+  margin: 0 1em 0 0;
+  font-style: italic;
+}
+
+.feature__description {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
+  top: 3em;
+}
+
+/**
+ * Footer
+ */
+
+.footer {
+    margin-top: 2em;
+    padding-bottom: 1em;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.footer li {
+    padding: 0;
+    list-style: none;
+}
+
+.footer__author {
+    font-size: 1rem;
+}
