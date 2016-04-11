@@ -1,7 +1,7 @@
 # Open Type playground
-A playground for Open Type experiments with CSS. A follow up demo to [this blog post](http://blog.ricardofilipe.com) about OpenType features.
+A playground for Open Type experiments with CSS. A follow up demo to [this blog post](http://blog.ricardofilipe.com/post/deep-into-opentype-features) about OpenType features.
 
-A working demo can be [found here](open-type.surge.sh).
+A working demo can be [found here](http://open-type.surge.sh).
 
 ### Locally
 
